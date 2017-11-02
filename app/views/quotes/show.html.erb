@@ -1,4 +1,4 @@
-<div class="page-header">
+<!-- <div class="page-header">
   <%= link_to quotes_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
     Back
@@ -8,16 +8,29 @@
     Edit
   <% end %>
   <h1>Show quote</h1>
+</div> -->
+
+<div class="view-quote">
+  <h4><%= @quote.quote %></h4>
+  <h5><%= @quote.author %></h5>
+  <%= link_to edit_quote_path(@quote) do %>
+  <i class="fa fa-edit fa-lg quoticon pull-left"
+   aria-hidden="true"></i>
+   <% end %>
+   <i class="fa fa-reply fa-2x arrowicon" aria-hidden="true"></i><i class="fa fa-share fa-2x arrowicon" aria-hidden="true"></i>
+   <%= link_to quotes_path do %>
+   <i class="fa fa-home fa-lg quoticon pull-right" aria-hidden="true"></i>
+   <% end %>
 </div>
 
-<dl class="dl-horizontal">
-  <dt>Quote:</dt>
-  <dd><%= @quote.quote %></dd>
+<!-- <dl class="dl-horizontal">
+<dt>Quote:</dt>
+<dd><%= @quote.quote %></dd>
 
-  <dt>Author:</dt>
-  <dd><%= @quote.author %></dd>
+<dt>Author:</dt>
+<dd><%= @quote.author %></dd>
 
-  <dt>Category:</dt>
-  <dd><%= @quote.category_id %></dd>
+<dt>Category:</dt>
+<dd><%= @quote.category_id %></dd>
 
-</dl>
+</dl> -->
