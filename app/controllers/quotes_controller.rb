@@ -12,6 +12,7 @@ class QuotesController < ApplicationController
   # GET /quotes/new
   def new
     @quote = Quote.new
+    @categories = Category.all.map { |c| [ c.name, c.id ] }
   end
 
   # GET /quotes/1/edit
