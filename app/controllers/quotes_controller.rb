@@ -12,7 +12,6 @@ class QuotesController < ApplicationController
   # GET /quotes/new
   def new
     @quote = Quote.new
-    @categories = Category.all.map { |c| [ c.name, c.id ] }
   end
 
   # GET /quotes/1/edit
@@ -52,6 +51,6 @@ class QuotesController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def quote_params
-    params.require(:quote).permit(:quote, :author, :string, :category_id)
+    params.require(:quote).permit(:quote, :author, :category)
   end
 end
