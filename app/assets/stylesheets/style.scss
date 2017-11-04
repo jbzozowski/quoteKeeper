@@ -1,11 +1,25 @@
 body {
   font-family: 'TisaSansPro', sans-serif;
-  padding: 0;
+  padding: 0em;
+  margin: 0em;
   min-height: 100vh;
-  background-image: url("swirl.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-image: url("swirl.png");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+body::after {
+  content: "";
+  background-image: image-url("swirl.png");
   background-size: cover;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
 }
 
 .main-logo h1 {
@@ -57,6 +71,39 @@ body {
   color: #e0357f;
 }
 
+.qtable th {
+  font-weight: 400;
+  color: #0731d5;
+  font-size: 16px;
+}
+
+.table tbody tr:hover {
+  background-color: #fcffe0;
+}
+
+.qlink a {
+  text-decoration: none;
+  color: #595a5b;
+}
+
+.qlink td {
+  font-size: 11px;
+  color: #595a5b;
+}
+
+.add-new {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  border-bottom: none;
+}
+
+.but-wide {
+  min-width: 90vw;
+  border-radius: 16px;
+  height: 30px;
+}
+
 .view-quote {
   text-align: center;
   border: 1px solid #ddd;
@@ -64,6 +111,7 @@ body {
   border-radius: 8px;
   margin: 2em 0.5em 0em .5em;
   padding: 2em 1em 2em 1em;
+  background-color: white;
 }
 
 .view-quote h5 {
@@ -82,14 +130,19 @@ body {
 }
 
 .quoticon {
-  margin-top: 2em;
+  color: white;
+  margin-top: 1.5em;
   margin-right: 1em;
   margin-left: 1em;
+  border-radius: 40%;
+  padding: 7px;
+  background-color: #4d87e2;
 }
 
 .arrowicon {
   color: #769b1a;
-  margin: 12px;
+  padding: 4px;
+  margin-top: .85em;
 }
 
 .new-input {
@@ -119,31 +172,6 @@ label {
   margin-left: 0em;
 }
 
-/*// dropdown-menu*/
-
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 6px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  left: 50%;
-  right: auto;
-  text-align: left;
-  transform: translate(-50%, 0);
-}
-
-.dropdown-menu:before {
-  position: absolute;
-  top: -7px;
-  left: 50%;
-  right: auto;
-  display: inline-block;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #ccc;
-  border-left: 7px solid transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  content: '';
-}
-
 .sbox {
   height: 28px;
 }
@@ -157,24 +185,11 @@ label {
 
 .nav-color {
   background-color: #e0357f;
-  /*background-color: #3072ba;*/
-}
-
-.subnav {
-  display: flex;
-  justify-content: space-between;
-  margin: -1em 7em 1em 7em;
-}
-
-.subnav h5 {
-  font-size: 12px;
-  color: #3072ba;
-  font-weight: bold;
 }
 
 #title {
   color: white;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 #home:hover,
@@ -189,11 +204,6 @@ label {
 #add,
 #search {
   color: white;
-}
-
-.navbar-toggle,
-.icon-bar {
-  border: 1px solid white;
 }
 
 .navbar-form {
@@ -221,13 +231,4 @@ label {
   box-shadow: none;
   -webkit-box-shadow: none;
   border-color: #cccccc;
-}
-
-.qtable th {
-  font-weight: 600;
-}
-
-.qlink a {
-  text-decoration: none;
-  color: black;
 }

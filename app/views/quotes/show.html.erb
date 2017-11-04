@@ -1,20 +1,8 @@
-<!-- <div class="page-header">
-  <%= link_to quotes_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to edit_quote_path(@quote), class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Edit
-  <% end %>
-  <h1>Show quote</h1>
-</div> -->
-
 <div class="view-quote">
-  <h4><%= @quote.quote %></h4>
+  <h4>"<%= @quote.quote %>"</h4>
   <h5><%= @quote.author %></h5>
   <%= link_to edit_quote_path(@quote) do %>
-  <i class="fa fa-edit fa-lg quoticon pull-left"
+  <i class="fa fa-pencil fa-lg quoticon pull-left"
    aria-hidden="true"></i>
    <% end %>
    <i class="fa fa-reply fa-2x arrowicon" aria-hidden="true"></i><i class="fa fa-share fa-2x arrowicon" aria-hidden="true"></i>
