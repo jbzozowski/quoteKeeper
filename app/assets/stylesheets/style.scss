@@ -3,22 +3,19 @@ body {
   padding: 0em;
   margin: 0em;
   min-height: 100vh;
-  // background-image: url("swirl.png");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
 }
 
 body::after {
   content: "";
-  background-image: image-url("swirl.png");
+  background-color: #377bb5;
   background-size: cover;
-  opacity: 0.7;
+  background-position: bottom;
+  position: fixed;
+  opacity: .2;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: fixed;
   z-index: -1;
 }
 
@@ -26,32 +23,39 @@ body::after {
   font-size: 80px;
   font-family: 'TisaPro';
   font-weight: normal;
-  color: #0731d5;
+  color: #e0357f;
   text-align: center;
   line-height: 60px;
-  margin-left: -1.25em;
-  margin-top: .75em;
+  margin-top: 1em;
   letter-spacing: -5px;
+  text-shadow: -1px 2px 3px #aaa;
 }
 
 .main-logo h2 {
   font-size: 80px;
   font-family: 'TisaPro';
   font-weight: normal;
-  color: #aaa;
+  color: #377bb5;
   text-align: center;
-  margin-left: -1.25em;
-  margin-bottom: .5em;
+  margin-bottom: 0.25em;
   margin-top: -.4em;
   letter-spacing: -4px;
+  text-shadow: -1px 2px 3px #aaa;
+}
+
+.main-logo p {
+  color: #377bb5;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: -8px;
 }
 
 .landing h3 {
   text-align: center;
   font-size: 36px;
-  line-height: 45px;
+  line-height: 47px;
   font-weight: 400;
-  margin-left: -3em;
+  margin-top: .5em;
 }
 
 .landing h4 {
@@ -59,26 +63,38 @@ body::after {
   font-size: 36px;
   line-height: 35px;
   font-weight: 400;
-  margin-left: -5em;
+  margin-left: -2em;
 }
 
 .landing h1 {
-  margin-left: -.35em;
+  margin-left: 1em;
   margin-top: -.6em;
   font-family: 'Noteworthy';
-  line-height: 20px;
+  line-height: 24px;
   font-size: 72px;
   color: #e0357f;
 }
 
+.wrapper {
+  border: 2px solid black;
+  background: white;
+  min-height: 90vh;
+  margin: 3em;
+  min-height: 95vh;
+}
+
 .qtable th {
   font-weight: 400;
-  color: #0731d5;
+  color: #377bb5;
   font-size: 16px;
 }
 
+.table thead tr th {
+  border-bottom: 2px solid white;
+}
+
 .table tbody tr:hover {
-  background-color: #fcffe0;
+  background-color: #eaf5ff;
 }
 
 .qlink a {
@@ -89,6 +105,7 @@ body::after {
 .qlink td {
   font-size: 11px;
   color: #595a5b;
+  border-bottom: 1px solid #eaf5ff;
 }
 
 .add-new {
@@ -102,6 +119,12 @@ body::after {
   min-width: 90vw;
   border-radius: 16px;
   height: 30px;
+}
+
+.search-text {
+  font-size: 12px;
+  color: black;
+  background-color: black;
 }
 
 .view-quote {
@@ -134,7 +157,7 @@ body::after {
   margin-top: 1.5em;
   margin-right: 1em;
   margin-left: 1em;
-  border-radius: 40%;
+  border-radius: 50%;
   padding: 7px;
   background-color: #4d87e2;
 }
@@ -192,19 +215,19 @@ label {
   font-weight: 400;
 }
 
-#home:hover,
-#view:hover,
-#add:hover,
-#search:hover {
-  color: yellow;
-}
-
-#home,
-#view,
-#add,
-#search {
-  color: white;
-}
+// #home:hover,
+// #view:hover,
+// #add:hover,
+// #search:hover {
+//   color: yellow;
+// }
+//
+// #home,
+// #view,
+// #add,
+// #search {
+//   color: white;
+// }
 
 .navbar-form {
   border-style: none;

@@ -1,13 +1,13 @@
 <div class="page-header">
   <%= link_to quotes_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
-    Back
+    List
   <% end %>
   <%= link_to @quote, class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-info-sign"></span>
     Show
   <% end %>
-  <h1>Editing quote</h1>
+  <h3>Editing Quote</h3>
 </div>
 
 <%= render 'form' %>

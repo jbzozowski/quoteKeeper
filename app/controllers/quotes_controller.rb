@@ -2,7 +2,12 @@ class QuotesController < ApplicationController
   # GET /quotes
   def index
     @quotes = Quote.all
+    if params[:search]
+      @quotes = Quote.search(params[:search]).order("created_at DESC")
+    else
+      @quotes = Quote.all.order("created_at DESC")
   end
+end
 
   # GET /quotes/1
   def show
