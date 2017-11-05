@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="page-header container">
   <%= link_to quotes_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
     List
@@ -9,5 +9,6 @@
   <% end %>
   <h3>Editing Quote</h3>
 </div>
-
-<%= render 'form' %>
+<div class="container">
+  <%= render 'form' %>
+</div>

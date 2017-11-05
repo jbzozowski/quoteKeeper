@@ -41,7 +41,7 @@
         </td>
         <td>
           <%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-remove delete" aria-hidden="true"></span>
           <% end %>
         </td>
       </tr>
@@ -51,4 +51,11 @@
   <% if @quotes.blank? %>
     <h4>There are no quotes containing the term <%= params[:search] %>.</h4>
   <% end %>
+</div>
+
+<div class="daily-quote">
+  <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js">
+  </script>
+  <small><i><a href="https://www.brainyquote.com/quotes_of_the_day.html" target="_blank" rel="nofollow">more Quotes</a></i>
+  </small>
 </div>

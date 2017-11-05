@@ -91,6 +91,7 @@ body::after {
 
 .table thead tr th {
   border-bottom: 2px solid white;
+  padding: 0em 1em .5em 1em;
 }
 
 .table tbody tr:hover {
@@ -106,6 +107,14 @@ body::after {
   font-size: 11px;
   color: #595a5b;
   border-bottom: 1px solid #eaf5ff;
+}
+
+tbody.table-body tr td {
+  padding-left: 1.5em;
+}
+
+.delete {
+  margin-right: 1em;
 }
 
 .add-new {
@@ -127,12 +136,19 @@ body::after {
   background-color: black;
 }
 
+.daily-quote {
+  background: white;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
 .view-quote {
   text-align: center;
   border: 1px solid #ddd;
   box-shadow: -1px 2px 8px black;
   border-radius: 8px;
-  margin: 2em 0.5em 0em .5em;
+  margin: 2em 1em 0em 1em;
   padding: 2em 1em 2em 1em;
   background-color: white;
 }

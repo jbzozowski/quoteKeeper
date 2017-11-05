@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
+
   <title>
     <%= Rails.application.class.parent_name %>
   </title>
@@ -26,7 +27,9 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid nav-color nav-wide">
         <div class="navbar-header qheader">
-          <a class="navbar-brand" id="title" href="#">QuoteKeeper</a>
+          <%= link_to root_path do %>
+            <span class="navbar-brand" id="title">QuoteKeeper</span>
+          <% end %>
           <%= form_tag(quotes_path, :method => "get", class:'search-text', id: "search-form") do %>
             <%= text_field_tag :search, params[:search], placeholder: "Search Quotes" %>
             <%= submit_tag "Search", :name => nil %>
@@ -43,7 +46,7 @@
       </div><!--/.container-fluid -->
     </nav>
   </div>
-  <div class="container">
+  <div class="">
     <% flash.each do |name, msg| %>
       <%= content_tag :div, class: "alert alert-#{ name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do %>
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
