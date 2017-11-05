@@ -51,6 +51,7 @@
   <% if @quotes.blank? %>
     <h4>There are no quotes containing the term <%= params[:search] %>.</h4>
   <% end %>
+  <%= paginate @quotes  %>
 </div>
 
 <div class="daily-quote">

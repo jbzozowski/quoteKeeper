@@ -1,13 +1,12 @@
 class QuotesController < ApplicationController
   # GET /quotes
   def index
-    @quotes = Quote.all
-    if params[:search]
-      @quotes = Quote.search(params[:search]).order("created_at DESC")
+    @quotes = Quote.search(params[:search])
+    if @quotes = Kaminari.paginate_array(@quotes).page(params[:page]).per(10)
     else
-      @quotes = Quote.all.order("created_at DESC")
+      @quotes = Quote.page(params[:page]).per(10)
+    end
   end
-end
 
   # GET /quotes/1
   def show
