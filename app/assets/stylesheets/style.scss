@@ -89,6 +89,14 @@ body::after {
   font-size: 16px;
 }
 
+.qtable th :hover {
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: -1px -1px 2px #377bb5;
+}
+
 .table thead tr th {
   border-bottom: 2px solid white;
   padding: 0em 1em .5em 1em;
@@ -250,6 +258,7 @@ label {
 .pagination {
   display: flex;
   justify-content: center;
+  font-size: 12px;
 }
 
 .navbar-form {

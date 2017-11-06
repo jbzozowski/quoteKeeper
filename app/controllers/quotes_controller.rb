@@ -1,7 +1,7 @@
 class QuotesController < ApplicationController
   # GET /quotes
   def index
-    @quotes = Quote.search(params[:search])
+    @quotes = Quote.search(params[:search]).order(params[:sort])
     if @quotes = Kaminari.paginate_array(@quotes).page(params[:page]).per(7)
     else
       @quotes = Quote.page(params[:page]).per(7)
