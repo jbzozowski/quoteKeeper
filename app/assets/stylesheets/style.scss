@@ -115,6 +115,11 @@ tbody.table-body tr td {
 
 .delete {
   margin-right: 1em;
+  color: #e0357f;
+}
+
+.edit {
+  color: #377bb5;
 }
 
 .add-new {
@@ -139,8 +144,15 @@ tbody.table-body tr td {
 .daily-quote {
   background: white;
   text-align: center;
-  padding-top: 1em;
+  padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.message {
+  color: #e0357f;
+  margin: 1em;
+  font-size: 14px;
+  text-align: center;
 }
 
 .view-quote {
@@ -175,7 +187,7 @@ tbody.table-body tr td {
   margin-left: 1em;
   border-radius: 50%;
   padding: 7px;
-  background-color: #4d87e2;
+  background-color: #377bb5;
 }
 
 .arrowicon {
@@ -231,19 +243,14 @@ label {
   font-weight: 400;
 }
 
-// #home:hover,
-// #view:hover,
-// #add:hover,
-// #search:hover {
-//   color: yellow;
-// }
-//
-// #home,
-// #view,
-// #add,
-// #search {
-//   color: white;
-// }
+.numbers {
+  margin-top: 2em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
 
 .navbar-form {
   border-style: none;
