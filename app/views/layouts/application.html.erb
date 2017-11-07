@@ -28,7 +28,7 @@
           <%= link_to root_path do %>
             <span class="navbar-brand" id="title">QuoteKeeper</span>
           <% end %>
-            <%= form_tag(quotes_path, :method => "get", id: "") do %>
+            <%= form_tag(quotes_path, :method => "get") do %>
             <div class="input-group add-on">
               <%= text_field_tag :search, params[:search], class: "form-control sbox", placeholder: "Search Quotes" %>
               <div class="input-group-btn">
@@ -52,6 +52,5 @@
   </div>
 </body>
 </html>
-
 
   <!-- <%= submit_tag "Search", :name => nil %> -->

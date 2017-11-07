@@ -149,6 +149,21 @@ tbody.table-body tr td {
   background-color: black;
 }
 
+.sortdrop {
+  margin-right: 1em;
+  margin-bottom: -1.5em;
+}
+
+.sortbox {
+  font-size: 12px;
+  padding: 3px;
+}
+
+.sort-choice {
+  font-size: 12px;
+  padding: 2px;
+}
+
 .daily-quote {
   background: white;
   text-align: center;
@@ -199,7 +214,7 @@ tbody.table-body tr td {
 }
 
 .arrowicon {
-  color: #769b1a;
+  color: #e0357f;
   padding: 4px;
   margin-top: .85em;
 }
