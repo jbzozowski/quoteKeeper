@@ -119,6 +119,7 @@ tbody.table-body tr td {
 }
 
 .delete {
+  margin-left: 1em;
   color: #e0357f;
 }
 
@@ -150,14 +151,14 @@ tbody.table-body tr td {
 }
 
 .sortdrop {
-  margin-right: 1em;
+  margin-right: .5em;
   margin-bottom: -1.5em;
 }
 
 .sortbox {
   font-size: 12px;
   padding: 0px 10px;
-  margin-right: .75em;
+  margin-right: .5em;
 }
 
 .sort-choice {
@@ -175,8 +176,10 @@ tbody tr td div.truncate {
 .daily-quote {
   background: white;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em;
+  margin: 0 1em 0 1em;
+  border: 1px solid #e0357f;
+  box-shadow: 1px 1px 5px black;
 }
 
 .message {
@@ -315,12 +318,17 @@ label {
 
 // phone-only
 @media (max-width: 599px) {
+  .but-wide {
+    min-width: 70vw;
+    border-radius: 16px;
+    height: 30px;
+  }
 }
 
 // tablet-portrait-up
 @media (min-width: 600px) {
   .but-wide {
-    min-width: 40vw;
+    min-width: 50vw;
     border-radius: 16px;
     height: 30px;
   }
@@ -338,6 +346,39 @@ label {
     margin-left: 20em;
   }
 
+  .daily-quote {
+    background: white;
+    text-align: center;
+    padding: 1em;
+    margin: 0 1.5em 0 1em;
+    border: 1px solid #e0357f;
+    box-shadow: 1px 1px 5px black;
+  }
+
+  .add-new {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    border-bottom: none;
+  }
+
+  tbody tr td div.truncate {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+// tablet-landscape-up
+@media (min-width: 800px) {
+  tbody tr td div.truncate {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
   .mid-table {
     display: flex;
     justify-content: flex-start;
@@ -353,30 +394,14 @@ label {
     text-align: center;
     padding: 1em;
     margin-left: 1.5em;
-    margin-right: .75em;
+    margin-right: 1.5em;
+    border: 1px solid #e0357f;
+    box-shadow: 1px 1px 5px black;
   }
+
   .qtable {
-    max-width: 60vw;
+    max-width: 65vw;
   }
-
-  .add-new {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 1em;
-    margin-left: 6em;
-    border-bottom: none;
-  }
-
-  tbody tr td div.truncate {
-    width: 175px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
-// tablet-landscape-up
-@media (min-width: 800px) {
 }
 
 // desktop-up
