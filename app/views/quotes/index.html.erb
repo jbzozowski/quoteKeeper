@@ -4,26 +4,26 @@
     Add New Quote
   <% end %>
 </div>
-<div class="dropdown pull-right sortdrop">
-  <button class="btn btn-default dropdown-toggle sortbox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Sort by
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><%= link_to "Quote", class: "sort-choice", :sort => "quote" %></li>
-    <li><%= link_to "Author", class: "sort-choice", :sort => "author" %></li>
-    <li><%= link_to "Category", class: "sort-choice", :sort => "category" %></li>
-  </ul>
+<div
 </div>
 
-<div class="table-responsive{-sm|-md|-lg|-xl}">
+<div class="table-responsive{-sm|-md|-lg|-xl} mid-table">
   <table class="table table-hover qtable">
     <thead>
       <tr>
-        <th>Quote</th>
-        <th>Author</th>
-        <th>Category</th>
-        <th colspan="2"></th>
+        <th class="col-xs-3, col-lg-6">Quote</th>
+        <th class="col-xs-3, col-lg-2">Author</th>
+        <th class="col-xs-3, col-lg-2">Category</th>
+        <th class="dropdown sortdrop">
+            <button class=" btn btn-default dropdown-toggle sortbox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span> Sort by </span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu sort-choice" aria-labelledby="dropdownMenu1">
+              <li><%= link_to "Quote", class: "sort-choice", :sort => "quote" %></li>
+              <li><%= link_to "Author", class: "sort-choice", :sort => "author" %></li>
+              <li><%= link_to "Category", class: "sort-choice", :sort => "category" %></li>
+            </ul>
+        </th>
       </tr>
     </thead>
 
@@ -31,9 +31,11 @@
       <%- @quotes.each do |quote| %>
       <tr>
         <td>
-          <%= link_to quote do %>
-            "<%= quote.quote.truncate(15) %>"
-          <% end %>
+          <div class="truncate">
+            <%= link_to quote do %>
+            "<%= quote.quote %>"
+            <% end %>
+          </div>
         </td>
         <td>
           <%= link_to quote do %>
@@ -47,12 +49,10 @@
         </td>
         <td>
           <%= link_to edit_quote_path(quote) do %>
-            <span class="glyphicon glyphicon-pencil edit" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-pencil edit changes" aria-hidden="true"></span>
           <% end %>
-        </td>
-        <td>
           <%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <span class="glyphicon glyphicon-remove delete" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-remove delete changes" aria-hidden="true"></span>
           <% end %>
         </td>
       </tr>
@@ -62,14 +62,17 @@
   <% if @quotes.blank? %>
     <h4 class="message">There are no quotes containing the term <%= params[:search] %>.</h4>
   <% end %>
+  <section class="day-quote">
+    <div class="daily-quote">
+      <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js">
+      </script>
+      <small><i><a href="https://www.brainyquote.com/quotes_of_the_day.html" target="_blank" rel="nofollow">more Quotes</a></i>
+      </small>
+    </div>
+  </section>
 </div>
 
-<div class="daily-quote">
-  <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js">
-  </script>
-  <small><i><a href="https://www.brainyquote.com/quotes_of_the_day.html" target="_blank" rel="nofollow">more Quotes</a></i>
-  </small>
-</div>
+
 <div class="numbers">
   <%= paginate @quotes %>
 </div>

@@ -83,6 +83,10 @@ body::after {
   min-height: 95vh;
 }
 
+table th {
+  border-bottom: none;
+}
+
 .qtable th {
   font-weight: 400;
   color: #377bb5;
@@ -111,15 +115,19 @@ body::after {
 
 tbody.table-body tr td {
   padding-left: 1.5em;
+  border-top: none;
 }
 
 .delete {
-  margin-right: 1em;
   color: #e0357f;
 }
 
 .edit {
   color: #377bb5;
+}
+
+.changes {
+  margin-left: 2em;
 }
 
 .add-new {
@@ -148,19 +156,27 @@ tbody.table-body tr td {
 
 .sortbox {
   font-size: 12px;
-  padding: 3px;
+  padding: 0px 10px;
+  margin-right: .75em;
 }
 
 .sort-choice {
   font-size: 12px;
-  padding: 2px;
+  text-align: left;
+}
+
+tbody tr td div.truncate {
+  width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .daily-quote {
   background: white;
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .message {
@@ -309,16 +325,38 @@ label {
     height: 30px;
   }
 
-  .qheader {
+  .nav-wide {
     display: flex;
-    padding-right: 1em;
-    align-items: center;
-    height: 4em;
-    max-width: 50vw;
+    justify-content: flex-end;
   }
 
+  .add-on {
+    max-width: 45vw;
+  }
+
+  .input-group {
+    margin-left: 20em;
+  }
+
+  .mid-table {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .day-quote {
+    justify-content: flex-end;
+    max-width: 35vw;
+  }
+
+  .daily-quote {
+    background: white;
+    text-align: center;
+    padding: 1em;
+    margin-left: 1.5em;
+    margin-right: .75em;
+  }
   .qtable {
-    max-width: 65vw;
+    max-width: 60vw;
   }
 
   .add-new {
@@ -329,13 +367,16 @@ label {
     border-bottom: none;
   }
 
-  .delete {
-    color: #e0357f;
+  tbody tr td div.truncate {
+    width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
 // tablet-landscape-up
-@media (min-width: 900px) {
+@media (min-width: 800px) {
 }
 
 // desktop-up

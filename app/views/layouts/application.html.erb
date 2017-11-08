@@ -11,6 +11,8 @@
     <%= Rails.application.class.parent_name %>
   </title>
 
+
+
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <%= javascript_include_tag "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js", "https://oss.maxcdn.com/respond/1.4.2/respond.min.js" %>
@@ -25,7 +27,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid nav-color nav-wide">
         <div class="navbar-header qheader">
-          <%= link_to root_path do %>
+          <%= link_to quotes_path do %>
             <span class="navbar-brand" id="title">QuoteKeeper</span>
           <% end %>
             <%= form_tag(quotes_path, :method => "get") do %>
@@ -36,9 +38,8 @@
               </div>
             </div>
             <% end %>
-          </div>
         </div>
-      </div><!--/.container-fluid -->
+      </div>
     </nav>
   <div class="">
     <% flash.each do |name, msg| %>
