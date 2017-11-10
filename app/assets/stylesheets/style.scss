@@ -116,6 +116,7 @@ table th {
 tbody.table-body tr td {
   padding-left: 1.5em;
   border-top: none;
+  vertical-align: middle;
 }
 
 .delete {
@@ -325,6 +326,10 @@ label {
     height: 30px;
     transition: all ease 0.8s;
   }
+
+  .qtable {
+    min-height: 45vh;
+  }
 }
 
 // tablet-portrait-up
@@ -356,6 +361,7 @@ label {
 
   .qtable {
     transition: all ease 0.8s;
+    min-height: 45vh;
   }
 }
 
@@ -390,7 +396,7 @@ label {
 
   .day-quote {
     justify-content: flex-end;
-    max-width: 35vw;
+    max-width: 30vw;
     transition: all ease 0.8s;
   }
 
@@ -406,7 +412,8 @@ label {
   }
 
   .qtable {
-    max-width: 65vw;
+    max-width: 70vw;
+    min-height: 65vh;
   }
 
   .photo-day {

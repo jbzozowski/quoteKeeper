@@ -1,19 +1,19 @@
 <div class="container">
-  <div class="view-quote">
-    <h4>"<%= @quote.quote %>"</h4>
-    <h5><%= @quote.author %></h5>
-    <%= link_to edit_quote_path(@quote) do %>
-    <i class="fa fa-pencil fa-lg quoticon pull-left"
-     aria-hidden="true"></i>
-     <% end %>
-      <%= link_to @quote.previous do %>
-        <i class="fa fa-reply fa-2x arrowicon" aria-hidden="true"></i>
+    <div class="view-quote">
+      <h4>"<%= @quote.quote %>"</h4>
+      <h5><%= @quote.author %></h5>
+      <%= link_to edit_quote_path(@quote) do %>
+      <i class="fa fa-pencil fa-lg quoticon pull-left"
+       aria-hidden="true"></i>
+       <% end %>
+        <%= link_to @quote.previous do %>
+          <i class="fa fa-reply fa-2x arrowicon" aria-hidden="true"></i>
+          <% end %>
+          <%= link_to @quote.next do %>
+          <i class="fa fa-share fa-2x arrowicon" aria-hidden="true"></i>
         <% end %>
-        <%= link_to @quote.next do %>
-        <i class="fa fa-share fa-2x arrowicon" aria-hidden="true"></i>
-      <% end %>
-     <%= link_to quotes_path do %>
-     <i class="fa fa-home fa-lg quoticon pull-right" aria-hidden="true"></i>
-     <% end %>
-  </div>
+       <%= link_to quotes_path do %>
+       <i class="fa fa-home fa-lg quoticon pull-right" aria-hidden="true"></i>
+       <% end %>
+    </div>
 </div>
