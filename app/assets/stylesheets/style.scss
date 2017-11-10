@@ -388,6 +388,10 @@ label {
     transition: all ease 0.8s;
   }
 
+  tbody.table-body tr td {
+    font-size: 12px;
+  }
+
   .mid-table {
     display: flex;
     justify-content: flex-start;
@@ -396,7 +400,7 @@ label {
 
   .day-quote {
     justify-content: flex-end;
-    max-width: 30vw;
+    max-width: 35vw;
     transition: all ease 0.8s;
   }
 
@@ -417,7 +421,7 @@ label {
   }
 
   .photo-day {
-    min-height: 40vh;
+    min-height: 45vh;
     max-width: 35vw;
     background-image: url("https://source.unsplash.com/random/?portrait,nature,water");
     background-size: cover;
@@ -441,7 +445,7 @@ label {
   }
 
   .qtable {
-    max-width: 65vw;
+    max-width: 70vw;
   }
 
   tbody tr td div.truncate {
@@ -452,6 +456,10 @@ label {
     transition: all ease 0.8s;
   }
 
+  tbody.table-body tr td {
+    font-size: 14px;
+  }
+
   .mid-table {
     display: flex;
     justify-content: flex-start;
@@ -459,7 +467,7 @@ label {
 
   .day-quote {
     justify-content: flex-end;
-    max-width: 35vw;
+    max-width: 50vw;
     transition: all ease 0.8s;
   }
 
@@ -469,19 +477,19 @@ label {
     text-align: center;
     padding: 1em;
     margin-left: 2em;
-    margin-right: 2em;
+    margin-right: 1em;
     border: 1px solid #e0357f;
     box-shadow: 1px 1px 5px black;
   }
 
   .photo-day {
-    min-height: 40vh;
-    max-width: 35vw;
+    min-height: 50vh;
+    max-width: 50vw;
     background-image: url("https://source.unsplash.com/random/?flower");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 2em;
-    margin-right: 2em;
+    margin-right: 1em;
     margin-top: 1em;
     border: 1px solid #377bb5;
     box-shadow: 1px 1px 5px black;
