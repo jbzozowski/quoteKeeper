@@ -1,24 +1,7 @@
-# README
+QuoteKeeper is an application I built for personal use. I collect inspirational quotes from various sources and needed a central location to organize, display and search my collection.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 5.1.4
 
-Things you may want to cover:
+Quote of the Day is supplied by BrainyQuote as a Javascript Feed.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Photos supplied via Unsplash API.
