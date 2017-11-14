@@ -284,7 +284,7 @@ label {
   display: flex;
   justify-content: center;
   font-size: 10px;
-  margin: 1em;
+  margin: 1em -2em;
 }
 
 .navbar-form {
@@ -323,10 +323,35 @@ label {
     border-radius: 16px;
     height: 30px;
     transition: all ease 0.8s;
+    margin-bottom: -.5em;
+  }
+
+  .adjust {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.2em;
   }
 
   .qtable {
     min-height: 45vh;
+  }
+
+  .qlink tr td {
+    display: block;
+    border: none;
+  }
+
+  .qlink td {
+    margin-top: .75em;
+  }
+
+  tbody.table-body tr td {
+    font-size: 12px;
+    padding: 0 1.5em;
+  }
+
+  tbody.table-body tr {
+    border-top: 1px solid #eaf5ff;
   }
 
   .qtable th {
@@ -337,10 +362,7 @@ label {
     visibility: collapse;
   }
 
-  .author,
-  .category,
-  .dropdown,
-  .adjust {
+  .category {
     display: none;
     width: 0;
     height: 0;
@@ -349,9 +371,22 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 115%;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: normal;
     transition: all ease 0.8s;
+  }
+
+  .day-quote {
+    max-height: 20vh;
+    transition: all ease 0.8s;
+    padding: 0em .25em;
+    margin-top: -.25em;
+  }
+
+  .author {
+    font-weight: bold;
   }
 }
 
