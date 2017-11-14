@@ -265,7 +265,7 @@ label {
 
 .qheader {
   display: flex;
-  padding-right: 1em;
+  padding-right: .5em;
   align-items: center;
   height: 4em;
   width: 385px;
@@ -343,6 +343,7 @@ label {
 
   .qlink td {
     margin-top: .75em;
+    margin-bottom: .25em;
   }
 
   tbody.table-body tr td {
@@ -382,7 +383,7 @@ label {
     max-height: 20vh;
     transition: all ease 0.8s;
     padding: 0em .25em;
-    margin-top: -.25em;
+    margin-top: -.5em;
   }
 
   .author {
