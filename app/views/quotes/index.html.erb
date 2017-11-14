@@ -11,9 +11,9 @@
   <table class="table table-hover qtable">
     <thead>
       <tr>
-        <th class="">Quote</th>
-        <th class="">Author</th>
-        <th class="">Category</th>
+        <th class="quote">Quote</th>
+        <th class="author">Author</th>
+        <th class="category">Category</th>
         <th class="dropdown sortdrop">
             <button class=" btn btn-default dropdown-toggle sortbox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               <span> Sort by </span><span class="caret"></span>
@@ -31,29 +31,35 @@
       <%- @quotes.each do |quote| %>
       <tr>
         <td>
-          <div class="truncate">
+          <div class="truncate quote">
             <%= link_to quote do %>
             "<%= quote.quote %>"
             <% end %>
           </div>
         </td>
         <td>
+          <div class="author">
           <%= link_to quote do %>
             <%= quote.author %>
           <% end %>
+        </div>
         </td>
         <td>
+          <div class="category">
           <%= link_to quote do %>
             <%= quote.category %>
           <% end %>
+        </div>
         </td>
         <td>
+          <div class="adjust">
           <%= link_to edit_quote_path(quote) do %>
             <span class="glyphicon glyphicon-pencil edit changes" aria-hidden="true"></span>
           <% end %>
           <%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>
             <span class="glyphicon glyphicon-remove delete changes" aria-hidden="true"></span>
           <% end %>
+        </div>
         </td>
       </tr>
       <% end %>
@@ -77,5 +83,5 @@
 
 
 <div class="numbers">
-  <%= paginate @quotes %>
+  <%= paginate @quotes, window: 1 %>
 </div>
