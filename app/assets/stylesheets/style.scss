@@ -364,6 +364,11 @@ label {
     transition: all ease 0.8s;
   }
 
+  .container {
+    max-width: 70vw;
+    transition: all ease 0.8s;
+  }
+
   .daily-quote {
     background-image: url("rainbow.jpg");
     background-size: cover;
@@ -413,6 +418,11 @@ label {
 
   tbody.table-body tr td {
     font-size: 13px;
+  }
+
+  .container {
+    max-width: 70vw;
+    transition: all ease 0.8s;
   }
 
   .mid-table {
