@@ -32,8 +32,8 @@
       <%- @quotes.each do |quote| %>
       <tr>
         <td>
+          <%= link_to quote do %>
           <div class="truncate quote">
-            <%= link_to quote do %>
             "<%= quote.quote %>"
             <% end %>
           </div>
