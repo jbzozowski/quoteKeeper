@@ -23,6 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 # Used for pagination
 gem 'kaminari'
 
+gem 'awesome_print'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -48,7 +49,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development do
-  gem 'awesome_print'
   gem 'dotenv-rails'
 end
 
