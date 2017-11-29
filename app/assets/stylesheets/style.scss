@@ -78,9 +78,8 @@ body::after {
 .wrapper {
   border: 2px solid black;
   background: white;
-  min-height: 90vh;
+  min-height: 80vh;
   margin: 3em;
-  min-height: 95vh;
 }
 
 table th {
@@ -337,7 +336,7 @@ label {
   }
 
   .qtable {
-    min-height: 45vh;
+    min-height: 40vh;
   }
 
   .qlink tr td {
@@ -351,7 +350,7 @@ label {
   }
 
   tbody.table-body tr td {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 1.5em;
   }
 

@@ -4,6 +4,9 @@
     Add New Quote
   <% end %>
 </div>
+<% if @quotes.blank? %>
+<h4 class="message search-error">There are no quotes containing the term <%= params[:search] %>.</h4>
+<% end %>
 
 <div class="table-responsive{-sm|-md|-lg|-xl} mid-table">
   <table class="table table-hover qtable">
@@ -63,9 +66,6 @@
       <% end %>
     </tbody>
   </table>
-  <% if @quotes.blank? %>
-    <h4 class="message">There are no quotes containing the term <%= params[:search] %>.</h4>
-  <% end %>
   <section class="day-quote">
     <div class="daily-quote">
       <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js">
