@@ -318,6 +318,11 @@ label {
 
 // phone-only
 @media (max-width: 599px) {
+  .input-group {
+    height: 28px;
+    max-width: 50vw;
+  }
+
   .but-wide {
     min-width: 60vw;
     border-radius: 16px;
