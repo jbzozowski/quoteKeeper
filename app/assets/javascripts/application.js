@@ -15,5 +15,3 @@
 //= require 'jquery'
 //= require 'jquery_ujs'
 //= require bootstrap
-
-@import 'jquery';@import 'jquery_ujs';
