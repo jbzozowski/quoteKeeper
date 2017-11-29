@@ -333,10 +333,12 @@ label {
     display: flex;
     justify-content: flex-end;
     margin-top: -2.2em;
+    margin-right: .5em;
   }
 
   .qtable {
     min-height: 40vh;
+    min-width: 95vw;
   }
 
   .qlink tr td {
