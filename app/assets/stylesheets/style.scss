@@ -376,7 +376,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 300px;
+    width: 350px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -392,11 +392,16 @@ label {
 
   .author {
     font-weight: bold;
+    margin-top: -.5em;
   }
 }
 
 // tablet-portrait-up
 @media (min-width: 600px) {
+  .input-group {
+    margin-left: 2em;
+  }
+
   .but-wide {
     min-width: 45vw;
     border-radius: 16px;
