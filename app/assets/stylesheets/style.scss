@@ -319,8 +319,7 @@ label {
 // phone-only
 @media (max-width: 599px) {
   .input-group {
-    height: 28px;
-    max-width: 50vw;
+    width: 200px;
   }
 
   .but-wide {
@@ -377,10 +376,10 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 100%;
+    width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal;
+    white-space: nowrap;
     transition: all ease 0.8s;
   }
 
