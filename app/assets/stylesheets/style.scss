@@ -496,7 +496,7 @@ label {
   }
 
   .qtable {
-    max-width: 70vw;
+    max-width: 75vw;
     min-height: 65vh;
   }
 
@@ -525,7 +525,7 @@ label {
   }
 
   .qtable {
-    max-width: 75vw;
+    max-width: 78vw;
   }
 
   tbody tr td div.truncate {
@@ -547,7 +547,6 @@ label {
 
   .day-quote {
     justify-content: flex-end;
-    max-width: 50vw;
     transition: all ease 0.8s;
   }
 
@@ -557,19 +556,18 @@ label {
     text-align: center;
     padding: 1em;
     margin-left: 2em;
-    margin-right: 1em;
+    margin-right: 0em;
     border: 1px solid #e0357f;
     box-shadow: 1px 1px 5px black;
   }
 
   .photo-day {
     min-height: 50vh;
-    max-width: 50vw;
     background-image: url("https://source.unsplash.com/random/?flower");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 2em;
-    margin-right: 1em;
+    margin-right: 0em;
     margin-top: 1em;
     border: 1px solid #377bb5;
     box-shadow: 1px 1px 5px black;
