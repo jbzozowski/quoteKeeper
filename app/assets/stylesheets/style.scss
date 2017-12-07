@@ -268,7 +268,7 @@ label {
 #title:hover {
   color: white;
   font-weight: 400;
-  text-shadow: 1px 1px 5px black;
+  opacity: .3;
 }
 
 #new-quote {
@@ -283,7 +283,7 @@ label {
   font-weight: 400;
   margin-left: 2em;
   margin-right: 2em;
-  text-shadow: 1px 1px 5px black;
+  opacity: .3;
 }
 
 .quotable {
@@ -355,7 +355,6 @@ label {
     font-weight: 400;
     margin-left: -.35em;
     margin-right: .5em;
-    text-shadow: 1px 1px 5px black;
   }
 
   .adjust {
