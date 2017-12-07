@@ -30,13 +30,18 @@
           <%= link_to quotes_path do %>
             <span class="navbar-brand" id="title">QuoteKeeper</span>
           <% end %>
+          <%= link_to new_quote_path do %>
+            <span class="navbar-brand" id="new-quote">New Quote</span>
+          <% end %>
             <%= form_tag(quotes_path, :method => "get") do %>
-            <div class="input-group add-on">
-              <%= text_field_tag :search, params[:search], class: "form-control sbox", placeholder: "Search Quotes" %>
+            <div class="searchme">
+              <div class="input-group add-on">
+                <%= text_field_tag :search, params[:search], class: "form-control sbox", placeholder: "Search" %>
               <div class="input-group-btn">
                 <button class="btn btn-default sbox"><i class="glyphicon glyphicon-search"></i></button>
               </div>
             </div>
+          </div>
             <% end %>
         </div>
       </div>

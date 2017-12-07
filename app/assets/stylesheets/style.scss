@@ -145,11 +145,6 @@ tbody.table-body tr td {
   height: 30px;
 }
 
-.search-text {
-  font-size: 12px;
-  color: black;
-}
-
 .sortdrop {
   margin-right: .5em;
   margin-bottom: -1.5em;
@@ -232,14 +227,6 @@ tbody tr td div.truncate {
   margin-top: .2em;
 }
 
-.new-input {
-  margin: 1em;
-}
-
-.place::placeholder {
-  font-size: 10px;
-}
-
 button {
   margin-left: 1em;
   text-align: center;
@@ -267,7 +254,6 @@ label {
   padding-right: .5em;
   align-items: center;
   height: 4em;
-  width: 385px;
 }
 
 .nav-color {
@@ -277,6 +263,33 @@ label {
 #title {
   color: white;
   font-weight: 400;
+}
+
+#title:hover {
+  color: white;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px black;
+}
+
+#new-quote {
+  color: white;
+  font-weight: 400;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#new-quote:hover {
+  color: white;
+  font-weight: 400;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-shadow: 1px 1px 5px black;
+}
+
+.quotable {
+  margin: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 .pagination {
@@ -289,6 +302,11 @@ label {
 .navbar-form {
   border-style: none;
   box-shadow: none;
+}
+
+.nav-wide {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .list-group {
@@ -318,15 +336,26 @@ label {
 // phone-only
 @media (max-width: 599px) {
   .input-group {
-    width: 200px;
+    max-width: 35vw;
   }
 
-  .but-wide {
-    min-width: 60vw;
-    border-radius: 16px;
-    height: 30px;
-    transition: all ease 0.8s;
-    margin-bottom: -.5em;
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  #new-quote {
+    color: white;
+    font-weight: 400;
+    margin-left: -.35em;
+    margin-right: .5em;
+  }
+
+  #new-quote:hover {
+    color: white;
+    font-weight: 400;
+    margin-left: -.35em;
+    margin-right: .5em;
+    text-shadow: 1px 1px 5px black;
   }
 
   .adjust {
@@ -401,14 +430,7 @@ label {
 // tablet-portrait-up
 @media (min-width: 600px) {
   .input-group {
-    margin-left: 2em;
-  }
-
-  .but-wide {
-    min-width: 45vw;
-    border-radius: 16px;
-    height: 30px;
-    transition: all ease 0.8s;
+    width: 250px;
   }
 
   .container {
@@ -449,12 +471,10 @@ label {
 
 // tablet-landscape-up
 @media (min-width: 800px) {
-  .but-wide {
-    min-width: 35vw;
-    border-radius: 16px;
-    height: 30px;
-    transition: all ease 0.8s;
+  .input-group {
+    width: 250px;
   }
+
   tbody tr td div.truncate {
     width: 235px;
     overflow: hidden;
@@ -517,15 +537,8 @@ label {
 
 // desktop-up
 @media (min-width: 1200px) {
-  .but-wide {
-    min-width: 30vw;
-    border-radius: 16px;
-    height: 30px;
-    transition: all ease 0.8s;
-  }
-
   .qtable {
-    max-width: 78vw;
+    max-width: 75vw;
   }
 
   tbody tr td div.truncate {
@@ -548,6 +561,8 @@ label {
   .day-quote {
     justify-content: flex-end;
     transition: all ease 0.8s;
+    max-width: 30vw;
+    margin-right: 1em;
   }
 
   .daily-quote {
@@ -556,18 +571,19 @@ label {
     text-align: center;
     padding: 1em;
     margin-left: 2em;
-    margin-right: 0em;
+    margin-right: 1em;
     border: 1px solid #e0357f;
     box-shadow: 1px 1px 5px black;
   }
 
   .photo-day {
     min-height: 50vh;
+    max-width: 30vw;
     background-image: url("https://source.unsplash.com/random/?flower");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 2em;
-    margin-right: 0em;
+    margin-right: 1em;
     margin-top: 1em;
     border: 1px solid #377bb5;
     box-shadow: 1px 1px 5px black;
