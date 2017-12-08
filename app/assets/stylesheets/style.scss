@@ -1,5 +1,5 @@
 body {
-  font-family: 'TisaSansPro', sans-serif;
+  font-family: 'Tisa Sans Pro', sans-serif;
   padding: 0em;
   margin: 0em;
   min-height: 100vh;
@@ -262,12 +262,12 @@ label {
 
 #title {
   color: white;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 #title:hover {
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   opacity: .3;
 }
 
@@ -344,15 +344,11 @@ label {
   }
 
   #new-quote {
-    color: white;
-    font-weight: 400;
     margin-left: -.35em;
     margin-right: .5em;
   }
 
   #new-quote:hover {
-    color: white;
-    font-weight: 400;
     margin-left: -.35em;
     margin-right: .5em;
   }
