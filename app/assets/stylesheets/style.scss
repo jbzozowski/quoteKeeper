@@ -45,11 +45,16 @@ body {
   transition: all ease 0.8s;
 }
 
+.uplogo {
+  transition: all ease 0.8s;
+}
+
 .main-logo p {
   color: #377bb5;
   font-size: 60px;
   text-align: center;
   letter-spacing: -8px;
+  transition: all ease 0.8s;
 }
 
 .landing h3 {
@@ -58,6 +63,7 @@ body {
   line-height: 47px;
   font-weight: 400;
   margin-top: .5em;
+  transition: all ease 0.8s;
 }
 
 .landing h4 {
@@ -66,6 +72,7 @@ body {
   line-height: 35px;
   font-weight: 400;
   margin-left: -2em;
+  transition: all ease 0.8s;
 }
 
 .landing h1 {
@@ -424,9 +431,9 @@ label {
 // tablet-portrait-up
 @media (min-width: 600px) {
   .uplogo {
-    margin-top: .5em;
     display: flex;
     justify-content: center;
+    margin-top: 2em;
   }
   .uplogo h1 {
     font-size: 110px;
@@ -446,10 +453,6 @@ label {
     color: #377bb5;
     letter-spacing: -7px;
     text-shadow: -1px 2px 3px #aaa;
-  }
-
-  .main-logo {
-    transition: all ease 0.8s;
   }
 
   .main-logo p {
