@@ -386,6 +386,7 @@ label {
   }
 
   tbody.table-body tr td {
+    font-family: 'Avenir', sans-serif;
     font-size: 14px;
     padding: 0 1.5em;
   }
@@ -515,6 +516,11 @@ label {
     box-shadow: 1px 1px 5px black;
   }
 
+  tbody.table-body tr td {
+    font-family: 'Avenir', sans-serif;
+    font-size: 14px;
+  }
+
   tbody tr td div.truncate {
     width: 300px;
     overflow: hidden;
@@ -551,7 +557,7 @@ label {
   }
 
   tbody.table-body tr td {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .container {
