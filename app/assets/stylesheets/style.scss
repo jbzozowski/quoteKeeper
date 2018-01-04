@@ -387,6 +387,7 @@ label {
 
   tbody.table-body tr td {
     font-family: 'Avenir', sans-serif;
+    font-weight: normal
     font-size: 14px;
     padding: 0 1.5em;
   }
@@ -431,7 +432,7 @@ label {
   }
 
   .author {
-    font-weight: bold;
+    font-weight: normal;
     margin-top: -.5em;
     opacity: .8;
   }
@@ -596,7 +597,7 @@ label {
   .photo-day {
     min-height: 45vh;
     max-width: 35vw;
-    background-image: url("https://source.unsplash.com/random/?portrait,nature,water");
+    background-image: url("https://source.unsplash.com/random/daily?nature,water");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 1em;
@@ -652,7 +653,7 @@ label {
   .photo-day {
     min-height: 50vh;
     max-width: 30vw;
-    background-image: url("https://source.unsplash.com/random/?flower");
+    background-image: url("https://source.unsplash.com/random/daily?flower");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 2em;
