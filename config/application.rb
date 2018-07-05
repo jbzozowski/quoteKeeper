@@ -26,3 +26,16 @@ module QuoteKeeper
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+# don't generate RSpec test for views and helpers
+config.generators do |g|
+  g.test_framework :rspec, fixture: true
+  g.fixture_replacement :factory_bot, dir: 'spec/factories'
+  g.view_specs false
+  g.helper_specs false
+  g.stylesheets false
+  g.javascripts false
+  g.helper false
+end
+
+config.autoload_paths += %W(\#{config.root}/lib)
