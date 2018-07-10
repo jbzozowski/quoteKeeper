@@ -11,12 +11,12 @@ describe ApiConstraints do
     # change name of marketplace
 
       request = double(host: 'api.quoteKeeper.dev', headers: {"Accept" => "application/vnd.quoteKeeper.v1"})
-      api_constraints_v1.matches?(request).should be_true
+      expect(api_constraints_v1.matches?(request)).to be_truthy
     end
 
     it "returns the default version when 'default' options is specified" do
       request = double(host: 'api.quoteKeeper.dev')
-      api_constraints_v2.matches?(request).should be_true
+      expect(api_constraints_v2.matches?(request)).to be_truthy
     end
   end
 end
