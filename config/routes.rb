@@ -12,13 +12,6 @@ Rails.application.routes.draw do
       scope '/v1', module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
         get 'quotes/random', to: 'quotes#random'
         resources :quotes, :only => [:show, :index] do
-          # add a route for getting a random
-          # collection do
-          # end
-
-          # member do
-          #   # When we are given an ID of a specific quote
-          # end
         end
       end
     end
