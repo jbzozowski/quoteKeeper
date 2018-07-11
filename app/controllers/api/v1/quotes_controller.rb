@@ -7,6 +7,7 @@ class Api::V1::QuotesController < ApplicationController
 
   def random
     quote = Quote.order('RANDOM()').limit(1).first
-    render json: quote
+    render :json => quote.as_json(:only => [:quote, :author])
+    # render json: quote
   end
 end
