@@ -4,4 +4,9 @@ class Api::V1::QuotesController < ApplicationController
       format.json { render json: Quote.all }
     end
   end
+
+  def random
+    quote = Quote.order('RANDOM()').limit(1).first
+    render json: quote
+  end
 end
