@@ -1,4 +1,7 @@
 class QuotesController < ApplicationController
+  http_basic_authenticate_with name: 'jbzozowski', password: 'bozo', except: [:index, :show]
+
+
   # GET /quotes
   def index
     @quotes = Quote.search(params[:search]).order(params[:sort])
