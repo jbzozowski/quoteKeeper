@@ -25,6 +25,9 @@ gem 'kaminari'
 
 gem 'awesome_print'
 
+# Unsplash Photo API
+gem 'unsplash'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

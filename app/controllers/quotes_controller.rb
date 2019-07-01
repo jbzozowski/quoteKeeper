@@ -1,5 +1,8 @@
 class QuotesController < ApplicationController
-  http_basic_authenticate_with name: 'jbzozowski', password: 'bozo', except: [:index, :show]
+
+  USERNAME, PASSWORD = 'jbzozowski', 'bozo'
+
+  before_action :authenticate, except: [:index, :show]
 
   # GET /quotes
   def index
@@ -58,5 +61,11 @@ class QuotesController < ApplicationController
   # Only allow a trusted parameter "white list" through.
   def quote_params
     params.require(:quote).permit(:quote, :author, :category)
+  end
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+        username == USERNAME && password == PASSWORD
+    end
   end
 end
