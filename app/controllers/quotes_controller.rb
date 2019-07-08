@@ -1,12 +1,13 @@
 class QuotesController < ApplicationController
+  helper_method :sort_column, :sort_direction
 
-  USERNAME, PASSWORD = 'jbzozowski', 'bozo'
+  # USERNAME, PASSWORD = 'jbzozowski', 'bozo'
 
   before_action :authenticate, except: [:index, :show]
 
   # GET /quotes
   def index
-    @quotes = Quote.search(params[:search]).order(params[:sort])
+    @quotes = Quote.search(params[:search]).order(sort_column + " " + sort_direction)
     if @quotes = Kaminari.paginate_array(@quotes).page(params[:page]).per(4)
     else
       @quotes = Quote.page(params[:page]).per(4)
@@ -67,5 +68,15 @@ class QuotesController < ApplicationController
    authenticate_or_request_with_http_basic do |username, password|
         username == USERNAME && password == PASSWORD
       end
-   end
+  end
+
+  def sort_column
+    Quote.column_names.include?(params[:sort]) ? params[:sort] : "quote"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  end
+
+
 end
