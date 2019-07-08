@@ -107,8 +107,30 @@ table th {
   padding: 0em 1em .5em 1em;
 }
 
+.table thead tr th .current {
+  padding-right: 18px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.table thead tr th .current:hover {
+  background-color: #eaf5ff;
+  text-decoration: none;
+}
+
+.table thead tr th .asc {
+  background-image: url("up_arrow.png");
+  background-size: 25%;
+}
+
+.table thead tr th .desc {
+  background-image: url("down_arrow.png");
+  background-size: 25%;
+}
+
 .table tbody tr:hover {
   background-color: #eaf5ff;
+  text-decoration: none;
 }
 
 .qlink a {
