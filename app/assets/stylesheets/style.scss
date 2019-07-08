@@ -172,7 +172,7 @@ tbody.table-body tr td {
 }
 
 tbody tr td div.truncate {
-  width: 60px;
+  width: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -417,7 +417,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 350px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -523,7 +523,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 300px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -550,7 +550,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 235px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -618,7 +618,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 380px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;

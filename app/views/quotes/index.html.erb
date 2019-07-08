@@ -14,17 +14,17 @@
       <tr>
           <th class="quote">Quote</th>
           <th class="author">Author</th>
-          <th class="category">Category</th>
-          <th class="dropdown sortdrop">
-              <button class=" btn btn-default dropdown-toggle sortbox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                <span> Sort by </span><span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu sort-choice" aria-labelledby="dropdownMenu1">
-                <li><%= link_to "Quote", class: "sort-choice", :sort => "quote" %></li>
-                <li><%= link_to "Author", class: "sort-choice", :sort => "author" %></li>
-                <li><%= link_to "Category", class: "sort-choice", :sort => "category" %></li>
-              </ul>
-        </th>
+          <!--<th class="category">Category</th>-->
+          <!--<th class="dropdown sortdrop">-->
+              <!--<button class=" btn btn-default dropdown-toggle sortbox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                <!--<span> Sort by </span><span class="caret"></span>-->
+              <!--</button>-->
+              <!--<ul class="dropdown-menu sort-choice" aria-labelledby="dropdownMenu1">-->
+                <!--<li><%= link_to "Quote", class: "sort-choice", :sort => "quote" %></li>-->
+                <!--<li><%= link_to "Author", class: "sort-choice", :sort => "author" %></li>-->
+                <!--<li><%= link_to "Category", class: "sort-choice", :sort => "category" %></li>-->
+              <!--</ul>-->
+        <!--</th>-->
       </tr>
     </thead>
 
@@ -45,23 +45,23 @@
           <% end %>
         </div>
         </td>
-        <td>
-          <div class="category">
-          <%= link_to quote do %>
-            <%= quote.category %>
-          <% end %>
-        </div>
-        </td>
-        <td>
-          <div class="adjust">
-          <%= link_to edit_quote_path(quote) do %>
-            <span class="glyphicon glyphicon-pencil edit changes" aria-hidden="true"></span>
-          <% end %>
-            <%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <span class="glyphicon glyphicon-remove delete changes" aria-hidden="true"></span>
-          <% end %>
-        </div>
-        </td>
+        <!--<td>-->
+          <!--<div class="category">-->
+          <!--<%= link_to quote do %>-->
+            <!--<%= quote.category %>-->
+          <!--<% end %>-->
+        <!--</div>-->
+        <!--</td>-->
+        <!--<td>-->
+          <!--<div class="adjust">-->
+          <!--<%= link_to edit_quote_path(quote) do %>-->
+            <!--<span class="glyphicon glyphicon-pencil edit changes" aria-hidden="true"></span>-->
+          <!--<% end %>-->
+            <!--<%= link_to quote, method: :delete, data: { confirm: 'Are you sure?' } do %>-->
+            <!--<span class="glyphicon glyphicon-remove delete changes" aria-hidden="true"></span>-->
+          <!--<% end %>-->
+        <!--</div>-->
+        <!--</td>-->
       </tr>
       <% end %>
     </tbody>
