@@ -5,20 +5,6 @@ body {
   min-height: 100vh;
 }
 
-// body::after {
-//   content: "";
-//   background-color: white;
-//   background-size: cover;
-//   background-position: bottom;
-//   position: fixed;
-//   opacity: .2;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   z-index: -1;
-// }
-
 .main-logo h1 {
   font-size: 80px;
   font-family: 'TisaPro';
@@ -107,8 +93,30 @@ table th {
   padding: 0em 1em .5em 1em;
 }
 
+.table thead tr th .current {
+  padding-right: 18px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.table thead tr th .current:hover {
+  background-color: #eaf5ff;
+  text-decoration: none;
+}
+
+.table thead tr th .asc {
+  background-image: url("up_arrow.png");
+  background-size: 25%;
+}
+
+.table thead tr th .desc {
+  background-image: url("down_arrow.png");
+  background-size: 25%;
+}
+
 .table tbody tr:hover {
   background-color: #eaf5ff;
+  text-decoration: none;
 }
 
 .qlink a {
@@ -172,7 +180,7 @@ tbody.table-body tr td {
 }
 
 tbody tr td div.truncate {
-  width: 60px;
+  width: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -195,15 +203,32 @@ tbody tr td div.truncate {
   font-size: 14px;
   text-align: center;
 }
+//
+//.parent {
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+//  align-items: center;
+//}
+
+
+.container {
+  //transition: all ease 0.8s;
+  background-image: url("rainbow.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
 
 .view-quote {
   text-align: center;
   border: 1px solid #ddd;
   box-shadow: -1px 2px 8px black;
   border-radius: 8px;
-  margin: 2em 1em 0em 1em;
   padding: 2em .5em 2em .5em;
   background-color: white;
+  max-width: 85vw;
+  margin: 0 auto;
 }
 
 .view-quote h5 {
@@ -234,7 +259,7 @@ tbody tr td div.truncate {
 .arrowicon {
   color: #e0357f;
   padding: 4px;
-  margin-top: .2em;
+  margin: 0 auto;
 }
 
 button {
@@ -417,7 +442,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 350px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -523,7 +548,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 300px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -550,7 +575,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 235px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -559,11 +584,6 @@ label {
 
   tbody.table-body tr td {
     font-size: 14px;
-  }
-
-  .container {
-    max-width: 70vw;
-    transition: all ease 0.8s;
   }
 
   .mid-table {
@@ -618,7 +638,7 @@ label {
   }
 
   tbody tr td div.truncate {
-    width: 380px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;

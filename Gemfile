@@ -1,4 +1,4 @@
-ruby '2.4.1'
+ruby '2.5.3'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -33,6 +33,16 @@ gem 'unsplash'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Active Admin
+gem 'activeadmin'
+
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
