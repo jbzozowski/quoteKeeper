@@ -5,20 +5,6 @@ body {
   min-height: 100vh;
 }
 
-// body::after {
-//   content: "";
-//   background-color: white;
-//   background-size: cover;
-//   background-position: bottom;
-//   position: fixed;
-//   opacity: .2;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   z-index: -1;
-// }
-
 .main-logo h1 {
   font-size: 80px;
   font-family: 'TisaPro';
@@ -217,15 +203,32 @@ tbody tr td div.truncate {
   font-size: 14px;
   text-align: center;
 }
+//
+//.parent {
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+//  align-items: center;
+//}
+
+
+.container {
+  //transition: all ease 0.8s;
+  background-image: url("rainbow.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
 
 .view-quote {
   text-align: center;
   border: 1px solid #ddd;
   box-shadow: -1px 2px 8px black;
   border-radius: 8px;
-  margin: 2em 1em 0em 1em;
   padding: 2em .5em 2em .5em;
   background-color: white;
+  max-width: 85vw;
+  margin: 0 auto;
 }
 
 .view-quote h5 {
@@ -256,7 +259,7 @@ tbody tr td div.truncate {
 .arrowicon {
   color: #e0357f;
   padding: 4px;
-  margin-top: .2em;
+  margin: 0 auto;
 }
 
 button {
@@ -581,11 +584,6 @@ label {
 
   tbody.table-body tr td {
     font-size: 14px;
-  }
-
-  .container {
-    max-width: 70vw;
-    transition: all ease 0.8s;
   }
 
   .mid-table {
