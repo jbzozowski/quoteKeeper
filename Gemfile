@@ -1,4 +1,4 @@
-ruby '2.4.1'
+ruby '2.5.3'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -36,6 +36,7 @@ gem 'unsplash'
 
 #Active Admin
 gem 'activeadmin'
+
 
 # Plus integrations with:
 gem 'devise'
